@@ -39,7 +39,7 @@ class RegistroActivity : AppCompatActivity() {
                 cal.set(Calendar.MONTH, month)
                 cal.set(Calendar.DAY_OF_MONTH, dayOfMonth)
 
-                val format = "MM/dd/yyyy"
+                val format = "MM-dd-yyyy"
                 val sdf = SimpleDateFormat(format, Locale.US)
                 fecha = sdf.format(cal.time).toString()
                 tv_showPicker.text = fecha
